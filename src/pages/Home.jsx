@@ -1,4 +1,13 @@
+import Profile from '../components/Profile'
+
 const tasks = []
+
+const user = {
+  id: 'user1',
+  firstName: 'trafalgar',
+  lastName: 'law',
+  position: 'middle software engineer',
+}
 
 const Home = () => {
   return (
@@ -10,7 +19,7 @@ const Home = () => {
               <h1 className='text-3xl font-bold text-[#2d2d75]'>TRACKEE</h1>
               <p>Stay on Track, Every Step of the Way!</p>
             </div>
-            <div>Profile goes here</div>
+            <Profile user={user} />
           </div>
           <div className='w-full lg:w-4/5'>
             <div className='time-sheet px-4 text-[#242424] lg:pl-6 lg:pr-4'>
