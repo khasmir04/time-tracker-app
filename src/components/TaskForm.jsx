@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-// *Static list of projects
+// Static list of projects
 const projects = [
   'Project 1',
   'Project 2',
@@ -90,7 +90,7 @@ const TaskForm = ({ onSubmit }) => {
         type='submit'
         className='ml-auto rounded-md bg-[#00A5CF] px-5 py-2 text-xl text-white hover:bg-opacity-60'
       >
-        Add Entry
+        Add Task
       </button>
     </form>
   )

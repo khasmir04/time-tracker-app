@@ -14,6 +14,7 @@ const Home = () => {
       const res = await userData.json()
       setUser(res)
     } catch (error) {
+      // Handle error here
       console.log(error.message)
     }
   }
@@ -24,6 +25,7 @@ const Home = () => {
       const res = await tasksData.json()
       setTasks(res)
     } catch (error) {
+      // Handle error here
       console.log(error.message)
     }
   }
