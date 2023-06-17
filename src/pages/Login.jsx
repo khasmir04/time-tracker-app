@@ -18,7 +18,7 @@ const Login = () => {
     <div>
       <div>
         <div className='xs:justify-center xs:flex-col flex h-screen items-center md:flex-row md:justify-evenly lg:flex-row lg:justify-evenly'>
-          <div className='xs:gap-0 mt-[20px] flex flex-col items-center justify-center md:gap-16 lg:w-5/12 lg:gap-16'>
+          <div className='xs:gap-0 mt-[20px] hidden flex-col items-center justify-center md:gap-16 lg:flex lg:w-5/12 lg:gap-16'>
             <div className='w-[150px]'>
               <img
                 src={logo}
@@ -33,7 +33,7 @@ const Login = () => {
               />
             </div>
           </div>
-          <div className='xs:w-[90%] xs:h-[70%] xs:justify-center mt-[20px] flex flex-col items-center gap-14 rounded-2xl bg-white px-[20px] py-[50px] drop-shadow-md md:h-[50%] md:w-5/12 lg:h-[50%] lg:w-4/12'>
+          <div className='xs:w-[90%] xs:h-[70%] xs:justify-center mx-12 mt-[20px] flex flex-1 flex-col items-center gap-14 rounded-2xl bg-white px-[20px] py-[50px] drop-shadow-md md:h-[50%] md:w-5/12 md:flex-none lg:mx-0 lg:h-[50%] lg:w-4/12'>
             <div className='flex flex-col items-center'>
               <p className='text-center text-3xl font-normal text-[#415381]'>
                 Welcome Back!

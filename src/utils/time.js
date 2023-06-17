@@ -1,4 +1,13 @@
-// Helper function to format time in HH:mm:ss format
+// Helper function to format date
+export const formatISOtoDate = () => {
+  const formattedTime = new Intl.DateTimeFormat('en-US', {
+    dateStyle: 'medium',
+    timeStyle: 'short',
+  }).format(new Date(modified_at));
+  return formattedTime
+}
+
+// Formats seconds in HH:mm:ss format
 const formatTime = (timeInSeconds) => {
   const hours = Math.floor(timeInSeconds / 3600);
   const minutes = Math.floor((timeInSeconds % 3600) / 60);

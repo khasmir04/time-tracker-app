@@ -40,6 +40,7 @@ const Home = () => {
       important: false,
       isTimerRunning: false,
       timeLeft: entry.hours * 3600,
+      modified_at: currentTime,
     }
 
     fetch('http://localhost:3000/tasks', {
@@ -70,7 +71,11 @@ const Home = () => {
   const handleToggleTimer = (id, isTimerRunning) => {
     const updatedTasks = tasks.map((task) => {
       if (task.id === id) {
-        const updatedTask = { ...task, isTimerRunning: !isTimerRunning }
+        const updatedTask = {
+          ...task,
+          isTimerRunning: !isTimerRunning,
+          modified_at: new Date().toISOString(),
+        }
         if (updatedTask.isTimerRunning) {
           updatedTask.timerInterval = setInterval(() => {
             if (updatedTask.timeLeft <= 0) {
