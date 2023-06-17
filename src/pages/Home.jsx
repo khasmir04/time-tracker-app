@@ -1,6 +1,23 @@
 import Profile from '../components/Profile'
+import TaskCard from '../components/TaskCard'
 
-const tasks = []
+const tasks = [
+  {
+    user: {
+      id: 'user1',
+      firstName: 'trafalgar',
+      lastName: 'law',
+      position: 'middle software engineer',
+    },
+    id: 1,
+    title: 'Feature T-123',
+    description: 'This is for work',
+    totalTime: 24,
+    created_at: '2022-06-14T20:00:42',
+    important: true,
+    paused: true,
+  },
+]
 
 const user = {
   id: 'user1',
@@ -23,13 +40,15 @@ const Home = () => {
           </div>
           <div className='w-full lg:w-4/5'>
             <div className='time-sheet px-4 text-[#242424] lg:pl-6 lg:pr-4'>
-              <p className='py-3 text-2xl'>Time sheet</p>
+              <p className='mb-4 border-b border-black text-xl italic'>
+                Entries:
+              </p>
               <div className='max-h-[60vh] overflow-y-scroll'>
                 {tasks.length > 0 ? (
                   tasks.map((task, index) => {
                     return (
                       <div key={index}>
-                        <>Tasks goes here</>
+                        <TaskCard task={task} />
                       </div>
                     )
                   })
