@@ -8,9 +8,9 @@
         "position": "middle software engineer"
       },
       "id": 1,
-      "title": "Feature T-123",
+      "project": "Project 1",
       "description": "This is for work",
-      "totalTime": 24,
+      "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": true,
       "paused": true
@@ -23,9 +23,9 @@
         "position": "ui/ux"
       },
       "id": 2,
-      "title": "Fix B-44",
+      "project": "Project 2",
       "description": "This is for work",
-      "totalTime": 24,
+      "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": false,
       "paused": true
@@ -38,9 +38,9 @@
         "position": "ui/ux"
       },
       "id": 3,
-      "title": "Chore C-457",
+      "project": "Project 3",
       "description": "This is for work",
-      "totalTime": 24,
+      "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": true,
       "paused": true
@@ -52,10 +52,10 @@
         "lastName": "caluscusao",
         "position": "ui/ux"
       },
-      "id": 3,
-      "title": "Feature T-93",
+      "id": 4,
+      "project": "Project 4",
       "description": "Creating another task for exam",
-      "totalTime": 24,
+      "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": false,
       "paused": true
@@ -67,10 +67,10 @@
         "lastName": "kj",
         "position": "junior software engineer"
       },
-      "id": 3,
-      "title": "Feature T-804",
+      "id": 5,
+      "project": "Project 5",
       "description": "Creating another task for exammmmmmmm",
-      "totalTime": 24,
+      "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": false,
       "paused": true
