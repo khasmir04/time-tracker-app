@@ -1,0 +1,105 @@
+{
+  "tasks": [
+    {
+      "user": {
+        "id": "user1",
+        "firstName": "trafalgar",
+        "lastName": "law",
+        "position": "middle software engineer"
+      },
+      "id": 1,
+      "title": "Feature T-123",
+      "description": "This is for work",
+      "totalTime": 24,
+      "created_at": "2022-06-14T20:00:42",
+      "important": true,
+      "paused": true
+    },
+    {
+      "user": {
+        "id": "user2",
+        "firstName": "jullie",
+        "lastName": "angeli",
+        "position": "ui/ux"
+      },
+      "id": 2,
+      "title": "Fix B-44",
+      "description": "This is for work",
+      "totalTime": 24,
+      "created_at": "2022-06-14T20:00:42",
+      "important": false,
+      "paused": true
+    },
+    {
+      "user": {
+        "id": "user3",
+        "firstName": "jane",
+        "lastName": "doe",
+        "position": "ui/ux"
+      },
+      "id": 3,
+      "title": "Chore C-457",
+      "description": "This is for work",
+      "totalTime": 24,
+      "created_at": "2022-06-14T20:00:42",
+      "important": true,
+      "paused": true
+    },
+    {
+      "user": {
+        "id": "user4",
+        "firstName": "khasmir",
+        "lastName": "caluscusao",
+        "position": "ui/ux"
+      },
+      "id": 3,
+      "title": "Feature T-93",
+      "description": "Creating another task for exam",
+      "totalTime": 24,
+      "created_at": "2022-06-14T20:00:42",
+      "important": false,
+      "paused": true
+    },
+    {
+      "user": {
+        "id": "user5",
+        "firstName": "dev",
+        "lastName": "kj",
+        "position": "junior software engineer"
+      },
+      "id": 3,
+      "title": "Feature T-804",
+      "description": "Creating another task for exammmmmmmm",
+      "totalTime": 24,
+      "created_at": "2022-06-14T20:00:42",
+      "important": false,
+      "paused": true
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "firstName": "john",
+      "lastName": "doe",
+      "position": "developer"
+    },
+    {
+      "id": "user2",
+      "firstName": "john",
+      "lastName": "doe",
+      "position": "developer"
+    },
+    {
+      "id": "user3",
+      "firstName": "jane",
+      "lastName": "doe",
+      "position": "ui/ux"
+    }
+  ],
+  "user": {
+    "id": "user1",
+    "firstName": "trafalgar",
+    "lastName": "law",
+    "position": "middle software engineer"
+  }
+}
