@@ -4,7 +4,7 @@ const Profile = ({ user }) => {
   const { firstName, lastName, position, image } = user
   return (
     <div className='user-profile flex p-4 text-[#fff]'>
-      <div className='flex flex-1 flex-wrap items-center gap-4 rounded-xl bg-[#5846E9] p-5 lg:flex-col lg:items-start lg:pb-14'>
+      <div className='flex flex-1 flex-wrap items-center gap-4 rounded-xl bg-[#5846E9] p-5 shadow-lg lg:flex-col lg:items-start  lg:pb-14'>
         <div>
           {image ? (
             <img
