@@ -1,6 +1,7 @@
-import { FaPauseCircle, FaPlayCircle } from 'react-icons/fa'
+import { FaPauseCircle, FaPlayCircle, FaTrash } from 'react-icons/fa'
+import formatTime from '../utils/time'
 
-const TaskCard = ({ task }) => {
+const TaskCard = ({ task, onToggleTimer, onDelete }) => {
   const cardClass = task.important ? 'bg-[#FE5F7E]' : 'bg-[#56C2E6]'
   return (
     <div className='mb-3 w-full shadow-md'>
@@ -9,22 +10,32 @@ const TaskCard = ({ task }) => {
           <div className='w-3/4'>
             <div>
               <p>{task.project}</p>
-              <p className='my-2 text-2xl'>{`${task.hours} HRS`}</p>
+              <p className='my-2 text-2xl'>{`Target ${task.hours} HRS`}</p>
+              <p className='my-2 text-2xl'>{formatTime(task.timeLeft)}</p>
               <p className='text-sm text-[#9f9d9d]'>{task.description}</p>
-              <i>{`By: ${task.user.firstName} ${task.user.lastName}`}</i>
+              <i>{`By: ${task.user?.firstName} ${task.user?.lastName}`}</i>
             </div>
           </div>
           <div className='w-1/4'>
-            <div className='h-full p-4'>
-              {task.paused ? (
-                <FaPlayCircle
+            <div className='flex h-full p-4'>
+              {!task.isTimerRunning && (
+                <FaTrash
                   size={50}
-                  className='my-auto ml-auto h-full cursor-pointer hover:opacity-50'
+                  className='my-auto ml-auto cursor-pointer hover:opacity-50'
+                  onClick={() => onDelete(task.id, task.isTimerRunning)}
                 />
-              ) : (
+              )}
+              {task.isTimerRunning ? (
                 <FaPauseCircle
                   size={50}
-                  className='my-auto ml-auto h-full cursor-pointer hover:opacity-50'
+                  className='my-auto ml-auto cursor-pointer hover:opacity-50'
+                  onClick={() => onToggleTimer(task.id, task.isTimerRunning)}
+                />
+              ) : (
+                <FaPlayCircle
+                  size={50}
+                  className='my-auto ml-auto cursor-pointer hover:opacity-50'
+                  onClick={() => onToggleTimer(task.id, task.isTimerRunning)}
                 />
               )}
             </div>

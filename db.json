@@ -13,7 +13,7 @@
       "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": true,
-      "paused": true
+      "isTimerRunning": false
     },
     {
       "user": {
@@ -28,7 +28,7 @@
       "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": false,
-      "paused": true
+      "isTimerRunning": false
     },
     {
       "user": {
@@ -43,7 +43,7 @@
       "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": true,
-      "paused": true
+      "isTimerRunning": false
     },
     {
       "user": {
@@ -58,7 +58,7 @@
       "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": false,
-      "paused": true
+      "isTimerRunning": false
     },
     {
       "user": {
@@ -73,7 +73,67 @@
       "hours": 24,
       "created_at": "2022-06-14T20:00:42",
       "important": false,
-      "paused": true
+      "isTimerRunning": false
+    },
+    {
+      "user": {
+        "id": "user1",
+        "firstName": "trafalgar",
+        "lastName": "law",
+        "position": "middle software engineer"
+      },
+      "hours": "69",
+      "description": "Jullie Angeli Task",
+      "project": "Project 4",
+      "created_at": "6/17/2023, 6:27:49 PM",
+      "important": false,
+      "isTimerRunning": false,
+      "id": 6
+    },
+    {
+      "user": {
+        "id": "user1",
+        "firstName": "trafalgar",
+        "lastName": "law",
+        "position": "middle software engineer"
+      },
+      "hours": "3",
+      "description": "Testing this one",
+      "project": "Project 3",
+      "created_at": "6/17/2023, 6:28:53 PM",
+      "important": false,
+      "isTimerRunning": false,
+      "id": 7
+    },
+    {
+      "user": {
+        "id": "user1",
+        "firstName": "trafalgar",
+        "lastName": "law",
+        "position": "middle software engineer"
+      },
+      "hours": "55",
+      "description": "This is another task",
+      "project": "Project 5",
+      "created_at": "6/17/2023, 6:29:21 PM",
+      "important": false,
+      "isTimerRunning": false,
+      "id": 8
+    },
+    {
+      "user": {
+        "id": "user1",
+        "firstName": "trafalgar",
+        "lastName": "law",
+        "position": "middle software engineer"
+      },
+      "hours": "2",
+      "description": "fasd",
+      "project": "Project 2",
+      "created_at": "6/17/2023, 6:32:54 PM",
+      "important": false,
+      "isTimerRunning": false,
+      "id": 9
     }
   ],
   "users": [

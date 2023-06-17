@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 
+// *Static list of projects
 const projects = [
   'Project 1',
   'Project 2',
   'Project 3',
   'Project 4',
   'Project 5',
-] // Static list of projects
+]
 
+// TODO: Add option for important tasks
 const TaskForm = ({ onSubmit }) => {
   const [hours, setHours] = useState('')
   const [description, setDescription] = useState('')
