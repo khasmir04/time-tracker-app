@@ -93,19 +93,14 @@ const Login = () => {
                   </a>
                 </div>
                 <div className='md:flex md:items-center'>
-                  {/* <div className="md:w-1/3"></div> */}
                   <div className='md:w-full'>
-                    <button
-                      className='focus:shadow-outline w-[150px] rounded bg-[#6492fe] px-4 py-2 font-normal text-white shadow hover:bg-[#5170ba] focus:outline-none'
-                      type='button'
-                    >
                       <Link
+                        className='focus:shadow-outline w-[150px] rounded bg-[#6492fe] px-4 py-2 font-normal text-white shadow hover:bg-[#5170ba] focus:outline-none'
                         to='/'
                         onClick={handleLogin}
                       >
                         LOG IN
                       </Link>
-                    </button>
                   </div>
                 </div>
               </form>
