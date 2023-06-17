@@ -1,4 +1,5 @@
 import { FaUserCircle } from 'react-icons/fa'
+import capitalize from '../utils/text'
 
 const Profile = ({ user }) => {
   const { firstName, lastName, position, image } = user
@@ -18,10 +19,16 @@ const Profile = ({ user }) => {
         </div>
         <div>
           <div className='flex flex-wrap gap-2 lg:block'>
-            <p className='text-left text-3xl'>{firstName || 'First name'}</p>
-            <p className='text-3xl'>{lastName || 'Last name'}</p>
+            <p className='text-left text-3xl'>
+              {firstName ? capitalize(firstName) : 'First name'}
+            </p>
+            <p className='text-3xl'>
+              {lastName ? capitalize(lastName) : 'Last name'}
+            </p>
           </div>
-          <p className='text-xl text-[#d2d1d1]'>{position || 'Position'}</p>
+          <p className='text-xl text-[#d2d1d1]'>
+            {position ? capitalize(position) : 'Position'}
+          </p>
         </div>
       </div>
     </div>
