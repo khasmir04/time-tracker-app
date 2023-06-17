@@ -60,6 +60,8 @@ This will create an optimized production build of the application in the dist di
 
 ### Setting up
 
+You can follow the instructions below or download this [file](https://drive.google.com/file/d/1MxSCqBzop2wHspJ6hF731HbIKHk37kRT/view?usp=sharing)
+
 1. On a separate directory, start by installing the json-server and lodash
 
     ```bash
