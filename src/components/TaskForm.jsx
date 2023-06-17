@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // Static list of projects
-const projects = [
+export const projects = [
   'Project 1',
   'Project 2',
   'Project 3',

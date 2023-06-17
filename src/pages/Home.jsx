@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import Profile from '../components/Profile'
 import TaskCard from '../components/TaskCard'
-import TaskForm from '../components/TaskForm'
+import TaskForm, { projects } from '../components/TaskForm'
 import EmptyTask from '../components/EmptyTask'
+import { calculateTotalHours } from '../utils/time'
 
 const Home = () => {
   const [user, setUser] = useState({})
@@ -133,6 +134,13 @@ const Home = () => {
 
   const sortedTasks = [...tasks].sort((a, b) => b.id - a.id)
 
+  // Calculation of total hours
+  const totalHours = {}
+  projects.forEach((projectId) => {
+    const total = calculateTotalHours(tasks, user.id, projectId)
+    totalHours[projectId] = total
+  })
+
   return (
     <div className='mt-12'>
       <div className='container mx-auto w-full'>
@@ -142,7 +150,10 @@ const Home = () => {
               <h1 className='text-3xl font-bold text-[#2d2d75]'>TRACKEE</h1>
               <p>Stay on Track, Every Step of the Way!</p>
             </div>
-            <Profile user={user} />
+            <Profile
+              user={user}
+              totalHours={totalHours}
+            />
           </div>
           <div className='w-full lg:w-4/5'>
             <div className='time-sheet rounded-md bg-white p-4 text-[#242424] lg:ml-4 lg:pl-6 lg:pr-4'>
